@@ -3,9 +3,11 @@ package com.example.demo.enrichment;
 import com.example.demo.Message;
 import com.example.demo.repo.AgeRepository;
 import java.util.Optional;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 
 @Service
+@Order(1)
 class AgeEnrichmentStep extends AbstractEnrichmentStep {
   private final AgeRepository ageRepository;
 
